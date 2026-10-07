@@ -16,7 +16,10 @@
         <Border Padding="10" Background="{DynamicResource PrimaryBackgroundGradient}">
             <Grid RowDefinitions="*, Auto">
                 <StackPanel Grid.Row="0" Spacing="10">
-                    <TextBlock Text="RunStore" FontSize="20" Foreground="{DynamicResource PrimaryTextColor}" />
+                    <StackPanel Orientation="Horizontal" Spacing="20" >
+                        <Image Width="48" Height="48" Source="avares://Client/Assets/Images/runstore.png" />
+                        <TextBlock VerticalAlignment="Center" Text="RunStore" FontSize="20" Foreground="{DynamicResource PrimaryTextColor}" />
+                    </StackPanel>
                     <Button Command="{Binding GoToHomeCommand}" Content="Hem" HorizontalAlignment="Stretch"></Button>
                     <Button Command="{Binding GoToProductsCommand}" Content="Produkter" HorizontalAlignment="Stretch"></Button>
                 </StackPanel>
